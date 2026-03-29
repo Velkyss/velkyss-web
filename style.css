@@ -1,7 +1,7 @@
 :root {
   --ink:         #111010;
   --ink2:        #1C1B19;
-  --ink3:        #5A5855;
+  --ink3:        #9a9895;
   --fog:         #F5F4F0;
   --fog2:        #ECEAE5;
   --border:      #D4D1CB;
@@ -131,6 +131,7 @@ nav {
   font-weight: 500;
   border-radius: 4px;
   text-decoration: none;
+  border: none;
 }
 
 .btn-ghost {
@@ -360,6 +361,33 @@ footer {
   font-size: 11px;
   color: var(--ink3);
   letter-spacing: 0.05em;
+}
+
+.form-success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+#form-success {
+  grid-column: 2;
+}
+
+.success-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--ember-light);
+  letter-spacing: -1px;
+}
+
+.success-sub {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--ink3);
+  line-height: 1.7;
 }
 
 @media (max-width: 768px) {

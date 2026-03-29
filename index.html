@@ -121,7 +121,7 @@
                 <a href="https://x.com/velkyss_dev" class="contact-link">@velkyss_dev</a>
             </div>
         </div>
-        <form class="contact-form" action="https://formspree.io/f/xvzvkbkk" method="POST">
+        <form id="contact-form" class="contact-form" action="https://formspree.io/f/xvzvkbkk" method="POST">
             <div class="form-field">
                 <input type="text" name="name" placeholder="Name">
             </div>
@@ -131,14 +131,21 @@
             <div class="form-field">
                 <textarea name="message" placeholder="Message"></textarea>
             </div>
+            <input type="hidden" name="_next" value="https://velkyss.dev">
             <button type="submit" class="btn-primary">Send message</button>
         </form>
+        <div id="form-success" class="form-success" style="display:none;">
+            <p class="success-title">Message sent.</p>
+            <p class="success-sub">I'll get back to you as soon as possible.</p>
+        </div>
     </section>
 
     <footer>
         <span class="footer-brand">Velkyss</span>
         <span class="footer-meta">velkyss.dev · 2026</span>
     </footer>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
