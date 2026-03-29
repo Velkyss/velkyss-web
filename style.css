@@ -5,9 +5,20 @@
   --fog: #F5F4F0;
   --fog2: #ECEAE5;
   --border: #D4D1CB;
+  --border-subtle: rgba(212, 209, 203, 0.12);
   --ember: #C84A18;
   --ember-light: #E5622E;
   --ember-deep: #7A2A0B;
+}
+
+html.light {
+  --ink: #F5F4F0;
+  --ink2: #ECEAE5;
+  --ink3: #5A5855;
+  --fog: #111010;
+  --fog2: #1C1B19;
+  --border: #B8B4AE;
+  --border-subtle: rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -27,7 +38,7 @@ nav {
   top: 0;
   z-index: 100;
   background: var(--ink);
-  border-bottom: 1px solid rgba(212, 209, 203, 0.12);
+  border-bottom: 1px solid var(--border-subtle);
   height: 64px;
   padding: 0 48px;
   display: flex;
@@ -137,7 +148,7 @@ nav {
 .btn-ghost {
   background: transparent;
   color: var(--fog);
-  border: 1px solid rgba(212, 209, 203, 0.25);
+  border: 1px solid var(--border-subtle);
   padding: 12px 28px;
   font-size: 14px;
   font-weight: 400;
@@ -171,8 +182,8 @@ nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1px;
-  background: rgba(212, 209, 203, 0.1);
-  border: 1px solid rgba(212, 209, 203, 0.1);
+  background: var(--border-subtle);
+  border: 1px solid var(--border-subtle);
 }
 
 .project-card {
@@ -324,7 +335,7 @@ nav {
 .form-field textarea {
   width: 100%;
   background: var(--ink2);
-  border: 1px solid rgba(212, 209, 203, 0.12);
+  border: 1px solid var(--border-subtle);
   border-radius: 4px;
   padding: 14px 16px;
   color: var(--fog);
@@ -345,7 +356,7 @@ nav {
 }
 
 footer {
-  border-top: 1px solid rgba(212, 209, 203, 0.1);
+  border-top: 1px solid var(--border-subtle);
   padding: 32px 48px;
   display: flex;
   justify-content: space-between;
@@ -412,15 +423,15 @@ footer {
 }
 
 .nav-mobile {
-    display: none;
-    position: absolute;
-    top: 64px;
-    left: 0;
-    right: 0;
-    background: var(--ink);
-    border-bottom: 1px solid rgba(212, 209, 203, 0.12);
-    padding: 16px 24px 24px 24px;
-    z-index: 99;
+  display: none;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  right: 0;
+  background: var(--ink);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 16px 24px 24px 24px;
+  z-index: 99;
 }
 
 .nav-mobile-links {
@@ -451,21 +462,21 @@ footer {
 }
 
 .nav-toggle {
-    font-family: 'DM Mono', monospace;
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--ink3);
-    background: transparent;
-    border: 1px solid rgba(212, 209, 203, 0.2);
-    border-radius: 4px;
-    padding: 4px 10px;
-    cursor: pointer;
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ink3);
+  background: transparent;
+  border: 1px solid var(--border-subtle);
+  border-radius: 4px;
+  padding: 4px 10px;
+  cursor: pointer;
 }
 
 .nav-toggle:hover {
-    color: var(--ember-light);
-    border-color: var(--ember-deep);
+  color: var(--ember);
+  border-color: var(--ember);
 }
 
 @media (max-width: 768px) {
