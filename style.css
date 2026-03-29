@@ -214,6 +214,10 @@ nav {
   letter-spacing: 0.08em;
 }
 
+.project-link:hover {
+  color: var(--ember-light);
+}
+
 #stack {
   padding: 96px 48px;
   background: var(--ink2);
@@ -444,6 +448,24 @@ footer {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.nav-toggle {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ink3);
+    background: transparent;
+    border: 1px solid rgba(212, 209, 203, 0.2);
+    border-radius: 4px;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+.nav-toggle:hover {
+    color: var(--ember-light);
+    border-color: var(--ember-deep);
 }
 
 @media (max-width: 768px) {

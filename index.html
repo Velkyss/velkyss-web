@@ -19,9 +19,10 @@
             Velkyss
         </a>
         <ul class="nav-links">
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#stack">Stack</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#projects" data-key="navProjects">Projects</a></li>
+            <li><a href="#stack" data-key="navStack">Stack</a></li>
+            <li><a href="#contact" data-key="navContact">Contact</a></li>
+            <li><button id="lang-toggle" class="nav-toggle">ES</button></li>
         </ul>
         <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
             <span></span>
@@ -30,53 +31,55 @@
         </button>
         <div class="nav-mobile" id="nav-mobile">
             <ul class="nav-mobile-links">
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#stack">Stack</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#projects" data-key="navProjects">Projects</a></li>
+                <li><a href="#stack" data-key="navStack">Stack</a></li>
+                <li><a href="#contact" data-key="navContact">Contact</a></li>
+                <li><button id="lang-toggle-mobile" class="nav-toggle">ES</button></li>
             </ul>
         </div>
     </nav>
 
     <section id="hero">
-        <p class="hero-eyebrow">Android Specialist · Freelance & Consulting</p>
+        <p class="hero-eyebrow" data-key="eyebrow">Android Specialist · Freelance & Consulting</p>
         <h1 class="hero-title">Build.<br>Ship.<br>Done.</h1>
-        <p class="hero-sub">I build focused digital products. Android specialist with a solid iOS background —
+        <p class="hero-sub" data-key="heroSub">I build focused digital products. Android specialist with a solid iOS
+            background —
             architecture, UX, and shipping things that work. Available for development and consulting.</p>
         <div class="hero-cta-row">
-            <a href="#projects" class="btn-primary">See projects</a>
-            <a href="#contact" class="btn-ghost">Get in touch</a>
+            <a href="#projects" class="btn-primary" data-key="seeProjects">See projects</a>
+            <a href="#contact" class="btn-ghost" data-key="getInTouch">Get in touch</a>
         </div>
     </section>
 
     <section id="projects">
-        <p class="section-label">Work</p>
-        <h2 class="section-title">Projects</h2>
+        <p class="section-label" data-key="workLabel">Work</p>
+        <h2 class="section-title" data-key="projectsTitle">Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
                 <span class="project-tag">Android · Compose</span>
                 <h3 class="project-name">HomeTogether Suite</h3>
-                <p class="project-desc">A suite of home management apps designed for couples. Built with Jetpack Compose
+                <p class="project-desc" data-key="suitHomeDescr">A suite of home management apps designed for couples. Built with Jetpack Compose
                     and MVVM architecture.</p>
-                <a href="#" class="project-link">View project</a>
+                <a href="#" class="project-link" data-key="viewProjectLabel">View project</a>
             </div>
             <div class="project-card">
                 <span class="project-tag">Android · Kotlin</span>
                 <h3 class="project-name">Project Two</h3>
                 <p class="project-desc">Short description of your second project.</p>
-                <a href="#" class="project-link">View project</a>
+                <a href="#" class="project-link" data-key="viewProjectLabel">View project</a>
             </div>
             <div class="project-card">
                 <span class="project-tag">Consulting</span>
                 <h3 class="project-name">Project Three</h3>
                 <p class="project-desc">Short description of your third project.</p>
-                <a href="#" class="project-link">View project</a>
+                <a href="#" class="project-link" data-key="viewProjectLabel">View project</a>
             </div>
         </div>
     </section>
 
     <section id="stack">
-        <p class="section-label">Technologies</p>
-        <h2 class="section-title">Stack</h2>
+        <p class="section-label" data-key="techLabel">Technologies</p>
+        <h2 class="section-title" data-key="stackLabel">Stack</h2>
         <div class="stack-grid">
             <div class="stack-group">
                 <h3 class="stack-group-title">Android</h3>
@@ -86,7 +89,7 @@
                     <li>Android SDK</li>
                     <li>Jetpack Compose</li>
                     <li>MVVM</li>
-                    <li>Clean Architecture</li>
+                    <li data-key="cleanArchitectureLabel">Clean Architecture</li>
                 </ul>
             </div>
             <div class="stack-group">
@@ -114,9 +117,9 @@
                     <li>Firebase</li>
                     <li>REST APIs</li>
                     <li>Bluetooth</li>
-                    <li>Third-party SDKs</li>
+                    <li data-key="thirdPartySdkLabel">Third-party SDKs</li>
                     <li>Crashlytics</li>
-                    <li>Accessibility</li>
+                    <li data-key="accesibilityLabel">Accessibility</li>
                 </ul>
             </div>
         </div>
@@ -124,8 +127,9 @@
 
     <section id="contact">
         <div class="contact-info">
-            <h2 class="contact-title">Let's build<br>something.</h2>
-            <p class="contact-sub">Available for freelance projects, consulting, and interesting collaborations. Based
+            <h2 class="contact-title" data-key="contactTitle">Let's build<br>something.</h2>
+            <p class="contact-sub" data-key="contactSub">Available for freelance projects, consulting, and interesting
+                collaborations. Based
                 in Sanlúcar de Barrameda, working remotely.</p>
             <div class="contact-links">
                 <a href="mailto:contact@velkyss.dev" class="contact-link">contact@velkyss.dev</a>
@@ -135,20 +139,20 @@
         </div>
         <form id="contact-form" class="contact-form" action="https://formspree.io/f/xvzvkbkk" method="POST">
             <div class="form-field">
-                <input type="text" name="name" placeholder="Name">
+                <input type="text" name="name" data-key="formName" placeholder="Name">
             </div>
             <div class="form-field">
-                <input type="email" name="email" placeholder="Email">
+                <input type="email" name="email" data-key="formEmail" placeholder="Email">
             </div>
             <div class="form-field">
-                <textarea name="message" placeholder="Message"></textarea>
+                <textarea name="message" data-key="formMessage" placeholder="Message"></textarea>
             </div>
             <input type="hidden" name="_next" value="https://velkyss.dev">
-            <button type="submit" class="btn-primary">Send message</button>
+            <button type="submit" class="btn-primary" data-key="formSend">Send message</button>
         </form>
         <div id="form-success" class="form-success" style="display:none;">
-            <p class="success-title">Message sent.</p>
-            <p class="success-sub">I'll get back to you as soon as possible.</p>
+            <p class="success-title" data-key="successTitle">Message sent.</p>
+            <p class="success-sub" data-key="successSub">I'll get back to you as soon as possible.</p>
         </div>
     </section>
 
@@ -157,6 +161,8 @@
         <span class="footer-meta">velkyss.dev · 2026</span>
     </footer>
 
+    <script src="strings.js"></script>
+    <script src="i18n.js"></script>
     <script src="main.js"></script>
 </body>
 
