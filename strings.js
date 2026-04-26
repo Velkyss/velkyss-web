@@ -12,8 +12,12 @@ const strings = {
         // Projects
         workLabel: "Work",
         projectsTitle: "Projects",
-        suitHomeDescr: "A suite of home management apps designed for couples. Built with Jetpack Compose and MVVM architecture.",
-        viewProjectLabel: "View project",
+        nullfastDescr: "Intermittent fasting app. Clean timer, history, water and weight tracking. No subscriptions, no fluff.",
+        viewOnPlayStore: "View on Play Store",
+        triploDescr: "Travel planning app. Packing checklists, POIs, reservations and budget tracking — activate only what you need.",
+        homeTogetherDescr: "A suite of home management apps designed for couples. Android and iOS from a single codebase.",
+        inDevelopmentTag: "In development",
+        comingSoonLabel: "Coming soon",
         // Stack
         techLabel: "Technologies",
         stackLabel: "Stack",
@@ -43,8 +47,12 @@ const strings = {
         // Proyectos
         workLabel: "Trabajo",
         projectsTitle: "Proyectos",
-        suitHomeDescr: "Una suite de aplicaciones para la gestión del hogar, diseñada para parejas. Desarrollada con Jetpack Compose y arquitectura MVVM.",
-        viewProjectLabel: "Ver proyecto",
+        nullfastDescr: "App de ayuno intermitente. Temporizador limpio, historial, registro de agua y peso. Sin suscripciones, sin ruido.",
+        viewOnPlayStore: "Ver en Play Store",
+        triploDescr: "App de planificación de viajes. Listas de equipaje, POIs, reservas y seguimiento de presupuesto — activa solo lo que necesitas.",
+        homeTogetherDescr: "Una suite de apps para la gestión del hogar diseñada para parejas. Android e iOS desde una sola base de código.",
+        inDevelopmentTag: "En desarrollo",
+        comingSoonLabel: "Próximamente",
         // Stack
         techLabel: "Tecnologías",
         stackLabel: "Stack tecnológico",
