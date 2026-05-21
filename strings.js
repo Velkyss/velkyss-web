@@ -24,7 +24,7 @@ const strings = {
     heroMetaR:
       '<span class="who">Ezequiel Marchena</span><br>' +
       'Sanlúcar de Barrameda · ES<br>' +
-      'Activo desde 2017',
+      'Activo desde 2019',
 
     /* ── Caso de estudio: Nullfast ── */
     caseLabel: "Caso de estudio",
@@ -135,7 +135,7 @@ const strings = {
     heroMetaR:
       '<span class="who">Ezequiel Marchena</span><br>' +
       'Sanlúcar de Barrameda · ES<br>' +
-      'Shipping since 2017',
+      'Shipping since 2019',
 
     /* ── Case study: Nullfast ── */
     caseLabel: "Case study",
